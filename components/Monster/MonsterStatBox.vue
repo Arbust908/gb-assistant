@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
 article {
-    @apply relative;
+    @apply relative col-span-1;
 }
 .name,
 .mod,

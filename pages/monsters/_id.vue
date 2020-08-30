@@ -10,12 +10,14 @@
             <p>{{ monster.hit_points }} HP</p>
             <p>{{ monster.hit_dice }}</p>
             <p>{{ monster.speed }}</p>
-            <MonsterStatBox :stat="monster.strength" title="STR" />
-            <MonsterStatBox :stat="monster.dexterity" title="DEX" />
-            <MonsterStatBox :stat="monster.constitution" title="CON" />
-            <MonsterStatBox :stat="monster.intelligence" title="INT" />
-            <MonsterStatBox :stat="monster.wisdom" title="WIZ" />
-            <MonsterStatBox :stat="monster.charisma" title="CHA" />
+            <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+                <MonsterStatBox :stat="monster.strength" title="STR" />
+                <MonsterStatBox :stat="monster.dexterity" title="DEX" />
+                <MonsterStatBox :stat="monster.constitution" title="CON" />
+                <MonsterStatBox :stat="monster.intelligence" title="INT" />
+                <MonsterStatBox :stat="monster.wisdom" title="WIZ" />
+                <MonsterStatBox :stat="monster.charisma" title="CHA" />
+            </section>
             <p>{{ monster.proficiencies }}</p>
             <p>{{ monster.damage_vulnerabilities }}</p>
             <p>{{ monster.damage_resistances }}</p>

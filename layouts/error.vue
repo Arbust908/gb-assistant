@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { theme } from '~/tailwind.config'
+// import { theme } from '~/tailwind.config'
 export default {
     props: {
         error: {
@@ -29,10 +29,10 @@ export default {
         },
     },
     computed: {
-        main() {
-            console.log(theme)
-            return theme.colors.dnd.separator
-        },
+        // main() {
+        //     console.log(theme)
+        //     return theme.colors.dnd.separator
+        // },
     },
     head() {
         return {
