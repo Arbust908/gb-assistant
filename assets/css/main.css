@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Olegos';
+    src: url('/fonts/Olegos.otf');
+    src: url('/fonts/Olegos.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+    display: swap;
+}
+@font-face {
+    font-family: 'Hammer-Regular';
+    src: url('/fonts/Hammer-Regular.ttf');
+    src: url('/fonts/Hammer-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    display: swap;
+}
+@font-face {
+    font-family: 'Saber-Regular';
+    src: url('/fonts/Saber-Regular.otf');
+    src: url('/fonts/Saber-Regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+    display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.pop-enter,
+.pop-leave-to {
+    transform: scale(0);
+    @apply opacity-0;
+}
+.pop-enter-to,
+.pop-leave {
+    transform: scale(1);
+    @apply opacity-100;
+}
+.pop-enter-active,
+.pop-leave-active {
+    transition: 0.3s cubic-bezier(0, 0, 0.8, 1.5);
+}
+
+.fade-enter,
+.fade-leave-to {
+    @apply opacity-0;
+}
+.fade-leave,
+.fade-enter-to {
+    @apply opacity-100;
+}
+.fade-enter-active,
+.fade-leave-active {
+    transition: 0.3s ease-in;
+}
+
+.side-slide-enter,
+.side-slide-leave-to {
+    @apply opacity-0 translate-x-full;
+}
+.side-slide-leave,
+.side-slide-enter-to {
+    @apply opacity-100 translate-x-0;
+}
+.side-slide-enter-active,
+.side-slide-leave-active {
+    @apply transform transition-all;
+}
+.side-slide-enter-active {
+    @apply ease-out duration-300;
+    
+}
+.side-slide-leave-active {
+    @apply ease-in duration-150;
+}
