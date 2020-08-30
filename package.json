@@ -21,6 +21,7 @@
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "nuxt": "^2.14.0",
     "nuxt-fontawesome": "^0.4.0",
+    "nuxt-start": "^2.14.4",
     "vue-shortkey": "^3.1.7"
   },
   "devDependencies": {
